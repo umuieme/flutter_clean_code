@@ -8,6 +8,7 @@ class NetworkInfoImpl extends NetworkInfo {
   final Connectivity connectivity;
 
   NetworkInfoImpl(this.connectivity);
+
   @override
   Future<bool> get isConnected async {
     final status = await connectivity.checkConnectivity();

@@ -4,9 +4,7 @@ abstract class UserListEvent extends Equatable {
   const UserListEvent();
 }
 
-class UserListFetchEvent extends UserListEvent{
-
+class UserListFetchEvent extends UserListEvent {
   @override
   List<Object?> get props => [];
-
 }

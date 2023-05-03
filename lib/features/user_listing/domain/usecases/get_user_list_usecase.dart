@@ -4,13 +4,13 @@ import 'package:clean_code_architecture/features/user_listing/domain/entities/us
 import 'package:clean_code_architecture/features/user_listing/domain/repositories/user_repository.dart';
 import 'package:dartz/dartz.dart';
 
-class GetUserListUseCase extends UseCase<List<User>, NoParams>{
+class GetUserListUseCase extends UseCase<List<User>, NoParams> {
   final UserRepository userRepository;
 
   GetUserListUseCase(this.userRepository);
+
   @override
   Future<Either<Failure, List<User>>> call(NoParams params) {
     return userRepository.getUserList();
   }
-
 }
